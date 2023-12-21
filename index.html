@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<title>SIT725 Prac 5</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<nav class="main-nav">
+			<div class="nav-wrapper navbar-size">
+			  <a href="#" class="brand-logo"><img class="user-image-size" src="images/profile.png" /></a>
+			  <ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a target="_blank" href="https://www.linkedin.com/in/mohansaikiran/">LinkedIn</a></li>
+			  </ul>
+			</div>
+		</nav>
+
+		<main class="main-body">
+			<div class="container">
+				<div class="row">
+					<div class="col s12 center-align">
+					  <h3 id="heading">SIT 725 Week 5 Workshop on MVC Architecture</h3>
+					  <p class="flow-text">This is a sample application to demonstrate the Model View Controller Architecture design. 
+                        The Model represents the application's data and business logic. It encapsulates the data and provides methods for manipulating and accessing it.
+                        The View is responsible for displaying the application's user interface. It presents the data from the Model to the user and captures user input.
+                        The Controller acts as an intermediary between the Model and the View. </p>
+					</div>
+					<div class="col s12 center-align">
+					  <img class="materialboxed materialboxed-image" src="images/dash.png">
+					</div>
+					<div class="col s12 center-align">
+					  <a class="waves-effect waves-light btn click-me-button modal-trigger" id="clickMeButton" data-target="modal1"><i class="material-icons left">auto_fix_high</i>Click Me</a>
+					</div>
+				  </div>
+				<div class="row" id="card-section">
+				</div>
+			</div>
+
+			<div id="modal1" class="modal modal-fixed-footer">
+				<div class="row modal-content">
+					<form class="col s12">
+						<div class="row">
+							<div class="input-field col s6">
+								<input id="title" type="text" class="validate">
+								<label for="title">TITLE</label>
+							</div>
+							<div class="input-field col s6">
+								<input id="subTitle" type="text" class="validate">
+								<label for="subTitle">SUBTITLE</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="path" type="text" class="validate">
+								<label for="path">PATH</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="description" type="text" class="validate">
+								<label for="description">DESCRIPTION</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12 center-align">
+								<a class="waves-effect waves-light btn" id="formSubmit">SUBMIT</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="scripts.js"></script>
+	</body>
+</html>
