@@ -21,7 +21,7 @@ io.on('connection',(socket)=>{
 
     setInterval(()=>{
         socket.emit('number', parseInt(Math.random()*10));
-        socket.emit('time', data.getHours()+' : '+data.getMinutes()+ ' : '+data.getSeconds());
+        socket.emit('time', data.getHours()+'h : '+data.getMinutes()+ 'm : '+data.getSeconds());
     }, 2000)
 });
 
